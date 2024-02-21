@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-between align-items-center p-2">
+    <h1>Simple airbnb</h1>
+    <%= link_to 'Back home', flats_path, class: "btn btn-primary" %>
+</div>
+
+<div class="w-50 mx-auto mt-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://source.unsplash.com/1600x900/?apartment" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= @flat.name %></h5>
+        <p class="card-text"><%= @flat.address %></p>
+        <p class="card-text"><%= @flat.description %></p>
+      </div>
+        <div class="d-flex gap-4 justify-content-center">
+            <%= link_to 'Edit', class: "btn btn-secondary" %>
+            <%= link_to 'Delete', class: "btn btn-danger" %>
+        </div>
+    </div>
+  </div>
